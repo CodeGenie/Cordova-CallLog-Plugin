@@ -5,7 +5,16 @@ Android only (help with IOS welcome) cordova plugin to access the call history o
 
 Installation 
 ============
-  cordova plugins add "https://github.com/uriva/CallLogPlugin"
+  cordova plugins add "https://github.com/dalyc/Cordova-CallLog-Plugin"
+  
+Permissions
+===========
+
+Add the following permissions to your AndroidManifest.xml
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
 Usage
 =====
@@ -136,7 +145,7 @@ Note that I also have a decorator in app.js to allow my app to continue working 
               date: 1406720317112,
               duration: 2224,
               new: 1,
-              number: '0428889999',
+              number: '0420884679',
               type: 1
             };
             return $q.when([lastCall]);
